@@ -1,0 +1,57 @@
+    1  ls
+    2  vi README.md
+    3  ls
+    4  sudo apt-get update
+    5  sudo apt-get upgrade
+    6  sudo apt-get install python-pip
+    7  sudo apt-get install python-dev
+    8  sudo apt-get install python-essential
+    9  sudo apt-get install postgresql postgresql-contrib
+   10  sudo apt-get install python-psycopg2
+   11  sudo apt-get install libpg-dev
+   12  sudo apt-get install libpq-dev
+   13  sudo apt-get install nginx
+   14  git clone https://github.com/slarribeau/aws.git
+   15  ls
+   16  rm -r aws/bigBlueBus/vp27/
+   17  ls aws/bigBlueBus/
+   18  sudo vim /etc/nginx/sites-enabled/default
+   19  sudo service nginix restart
+   20  sudo service nginx restart
+   21  sudo su - postgres
+   22  sudo chmod 4777 /usr/local/lib/python2.7/dist-packages/
+   23  sudo chmod 4777 /usr/local/bin
+   24  pip install virtualenvwrapper
+   25  pwd
+   26  virtualenv vp27
+   27  source vp27/bin/activate
+   28  pip install django psycopg2 djangorestframework django-cors-headers
+   29  vi  vi ~/aws/bigBlueBus/myproject/settings.py
+   30  cd aws/bigBlueBus/myproject/
+   31  ls
+   32  cd ..
+   33  ls
+   34  python manage.py makemigrations myproject
+   35  ls
+   36  python manage.py makemigrations api
+   37  python manage.py sqlmigrate api 0001
+   38  python manage.py migrate
+   39  mkdir ~/bbb_data
+   40  cd ~/bbb_data/
+   41  curl http://gtfs.bigbluebus.com/parsed/stops.txt > stops.txt
+   42  sudo su - postgres
+   43  cd
+   44  ls
+   45  vi aws/www/index.html 
+   46  ls
+   47  cd bbb_data/
+   48  ls
+   49  cd ..
+   50  cd aws/
+   51  ls
+   52  cd bigBlueBus/
+   53  ls
+   54  python manage.py runserver 0.0.0.0:8000
+   55  cd
+   56  ls
+   57  history > history
